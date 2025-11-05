@@ -1,6 +1,14 @@
-require('lazy').setup({
-  'nvim-treesitter/nvim-treesitter',
-  lazy = false,
-  branch = 'main',
-  build = ':TSUpdate'
-})
+return {
+  {
+    "nvim-treesitter/nvim-treesitter",
+    lazy = "false",
+    build = ":TSUpdate",
+    branch = "main",
+    opts = {
+      ensure_installed = {
+        "gitcommit",
+        "gitignore",
+      },
+    },
+  },
+}

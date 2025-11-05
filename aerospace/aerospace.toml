@@ -74,6 +74,10 @@ alt-r = 'mode resize'
     run = ['layout floating']
 
 [[on-window-detected]]
+    if.app-id = 'com.apple.finder'
+    run = ['layout floating']
+
+[[on-window-detected]]
     if.app-name-regex-substring = 'Neovide'
     run = ['move-node-to-workspace E']
 
@@ -106,3 +110,8 @@ alt-r = 'mode resize'
     if.app-id = 'com.1password.1password'
     if.app-name-regex-substring = '1Password'
     run = ['layout floating']
+
+[[on-window-detected]]
+    if.app-id = 'com.mitchellh.ghostty'
+    run = ['move-node-to-workspace T']
+
