@@ -4,5 +4,4 @@
 - btop
 - kitty
 - nvim
-- neovide
 - starship
